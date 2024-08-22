@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+:root {
+	--color-1: #f0f2f5;
+	--color-2: #0866ff;
+	--color-3: #42b72a;
+	--color-4: #ffffff;
+	--color-5: #000000;
+
+	--color-2-input-form: #c6f2fe;
+	--color-5-rgba-text: rgba(0, 0, 0, 0.2);
+	--color-5-rgba: rgba(0, 0, 0, 0.236);
+	--color-3-hover: #379e22;
+	--color-2-hover: #1b6bff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--color-1);
+	width: 100%;
+	font-family: "Roboto", Arial, Helvetica, --sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+main {
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding-inline: 10rem;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5rem;
+	padding-inline: 1.5rem;
+}
+.logo {
+	margin-bottom: 1rem;
+}
+
+.facebook-logo {
+	height: 106px;
+	margin: -28px;
+}
+
+.mensagem {
+	width: 50%;
+}
+
+.mensagem p {
+	font-size: 21pt;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	width: 396px;
+	height: 456px;
+}
+
+.login-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	background-color: var(--color-4);
+	margin-top: 70px;
+	padding: 20px;
+	border-radius: 10px;
+	width: 396px;
+	box-shadow: 0 1px 8px var(--color-5-rgba), 0 2px 8px var(--color-5-rgba);
+}
+
+.login::after:hover {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	width: 350px;
+	height: 300px;
+}
+
+:is(#email, #senha, #entrar) {
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+}
+:is(#email, #senha) {
+	font-size: 12pt;
+	padding: 25px 15px;
+	outline: none;
+	border: 1.5px solid var(--color-5-rgba);
+}
+
+:is(#email, #senha):focus {
+	border: 1.5px solid var(--color-2);
+}
+:is(#email, #senha):focus::placeholder {
+	color: var(--color-5-rgba-text);
+}
+#entrar {
+	background-color: var(--color-2);
+	color: var(--color-1);
+	font-size: 15pt;
+	font-weight: bold;
+	height: 52px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+}
+
+#entrar:hover {
+	background-color: var(--color-2-hover);
+}
+
+.esqueceu-senha {
+	text-decoration: none;
+	color: var(--color-2);
+	font-size: 11pt;
+}
+
+.esqueceu-senha:hover {
+	text-decoration: underline;
+}
+
+.linha {
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-5-rgba);
+	margin-block: 3px;
+}
+.nova-conta-btn {
+	text-decoration: none;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	color: var(--color-4);
+	background-color: var(--color-3);
+	width: 180px;
+	padding: 14px;
+	border-radius: 7px;
+}
+
+.nova-conta-btn:hover {
+	background-color: var(--color-3-hover);
+}
+
+.sugestao{
+	margin-top: 1.5rem;
+	padding-inline: 0.8rem;
+	font-size: 10pt;
+	text-align: center;
+}
+
+.sugestao > a{
+	text-decoration: none;
+	color: var(--color-5);
+}
+
+.sugestao > a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+table{
+    border: 2px solid  black;
+}
+
+.cabecalho{
+    background-color: yellowgreen;
+}
+
+.cabecalho-linha{
+    color: white;
+}
+
+tr td{
+    text-align: center; /* alinhamento de texto */
+    border: 3px solid  black;
+}
